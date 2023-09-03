@@ -1,3 +1,10 @@
+# [0.120.0](https://github.com/YT-Advanced/params/compare/v0.119.0...v0.120.0) (2023-09-03)
+
+
+### Features
+
+* Test other params ([c958aa3](https://github.com/YT-Advanced/params/commit/c958aa344552e3197f0c457252e0ea9296ed7fcc))
+
 # [0.119.0](https://github.com/YT-Advanced/params/compare/v0.118.1...v0.119.0) (2023-09-03)
 
 

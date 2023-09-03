@@ -1,3 +1,10 @@
+# [0.119.0](https://github.com/YT-Advanced/params/compare/v0.118.1...v0.119.0) (2023-09-03)
+
+
+### Features
+
+* Test new spoof params ([9760fe3](https://github.com/YT-Advanced/params/commit/9760fe3f1e3dd2684e6761be16a3015e1f79d75c))
+
 # [0.118.0](https://github.com/YT-Advanced/ReX-integrations/compare/v0.117.3...v0.118.0) (2023-09-01)
 
 

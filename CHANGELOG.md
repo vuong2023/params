@@ -1,3 +1,10 @@
+# [0.121.0](https://github.com/YT-Advanced/params/compare/v0.120.1...v0.121.0) (2023-09-03)
+
+
+### Features
+
+* Youtube Music params ([be15f89](https://github.com/YT-Advanced/params/commit/be15f8948c894d65086dbae2e94ba80df1a2f3ad))
+
 ## [0.120.1](https://github.com/YT-Advanced/params/compare/v0.120.0...v0.120.1) (2023-09-03)
 
 

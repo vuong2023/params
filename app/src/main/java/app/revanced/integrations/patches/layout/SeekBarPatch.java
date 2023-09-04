@@ -83,9 +83,13 @@ public class SeekBarPatch {
     }
 
     public static String enableTimeStampSpeed(String totalTime) {
-        if (VideoInformation.getVideoTime() > 29990 && VideoInformation.getVideoTime() % 10000L > 9980L) {
-            LogHelper.printDebug(SeekBarPatch.class, "Seek Seek Seek");
-            VideoInformation.seekToRelative(100);
+        if (VideoInformation.getVideoTime() > 29990)
+        {
+            LogHelper.printDebug(SeekBarPatch.class, "Pass 1");
+            if (VideoInformation.getVideoTime() % 10000 > 9980) {
+                LogHelper.printDebug(SeekBarPatch.class, "Seek Seek Seek");
+                VideoInformation.seekToRelative(100);
+            }
         }
         if (SettingsEnum.ENABLE_TIME_STAMP_SPEED.getBoolean()) {
             var regex = "\\((.*?)\\)";

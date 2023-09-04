@@ -1,3 +1,10 @@
+## [0.123.1](https://github.com/YT-Advanced/params/compare/v0.123.0...v0.123.1) (2023-09-04)
+
+
+### Bug Fixes
+
+* Revert changes ([664db04](https://github.com/YT-Advanced/params/commit/664db04760dd7761b7af99204a6afa59fcace1a9))
+
 # [0.123.0](https://github.com/YT-Advanced/params/compare/v0.122.0...v0.123.0) (2023-09-04)
 
 

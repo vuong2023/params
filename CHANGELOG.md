@@ -1,3 +1,10 @@
+# [0.125.0](https://github.com/YT-Advanced/params/compare/v0.124.0...v0.125.0) (2023-09-04)
+
+
+### Features
+
+* Strange ([6bf4cc2](https://github.com/YT-Advanced/params/commit/6bf4cc2cb4aa3f234f9505d3754ffc0136ed0446))
+
 # [0.124.0](https://github.com/YT-Advanced/params/compare/v0.123.3...v0.124.0) (2023-09-04)
 
 

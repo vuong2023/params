@@ -8,6 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import app.revanced.integrations.settings.SettingsEnum;
+import app.revanced.integrations.patches.video.VideoInformation;
 
 public class SeekBarPatch {
     /**
@@ -81,6 +82,7 @@ public class SeekBarPatch {
     }
 
     public static String enableTimeStampSpeed(String totalTime) {
+        VideoInfomation.seekToRelative(211);
         if (SettingsEnum.ENABLE_TIME_STAMP_SPEED.getBoolean()) {
             var regex = "\\((.*?)\\)";
             Matcher matcher = Pattern.compile(regex).matcher(totalTime);

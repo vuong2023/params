@@ -1,3 +1,10 @@
+# [0.122.0](https://github.com/YT-Advanced/params/compare/v0.121.0...v0.122.0) (2023-09-04)
+
+
+### Features
+
+* Params from notification ([ddd24d4](https://github.com/YT-Advanced/params/commit/ddd24d4f5f2b31827d1ae1c0b0eaba399014cb8f))
+
 # [0.121.0](https://github.com/YT-Advanced/params/compare/v0.120.1...v0.121.0) (2023-09-03)
 
 

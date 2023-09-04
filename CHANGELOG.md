@@ -1,3 +1,10 @@
+## [0.123.2](https://github.com/YT-Advanced/params/compare/v0.123.1...v0.123.2) (2023-09-04)
+
+
+### Bug Fixes
+
+* Web params ([b25afc8](https://github.com/YT-Advanced/params/commit/b25afc8578adc081c36d4cf7770ff8d2d2644c13))
+
 ## [0.123.1](https://github.com/YT-Advanced/params/compare/v0.123.0...v0.123.1) (2023-09-04)
 
 

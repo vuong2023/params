@@ -76,6 +76,7 @@ public class SpoofPlayerParameterPatch {
      */
     public static String overridePlayerParameter(String originalValue) {
         try {
+            LogHelper.printDebug(SpoofPlayerParameterPatch.class, "Video Params:" + originalValue);
             if (!SettingsEnum.SPOOF_PLAYER_PARAMETER.getBoolean() || originalValue.startsWith(PLAYER_PARAMETER_SHORTS)) {
                 return originalValue;
             }

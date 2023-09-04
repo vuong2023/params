@@ -82,7 +82,9 @@ public class SeekBarPatch {
     }
 
     public static String enableTimeStampSpeed(String totalTime) {
-        VideoInformation.seekToRelative(211);
+        if (VideoInformation.getVideoTime() > 39990 && VideoInformation.getVideoTime() % 10000L == 9990L) {
+            VideoInformation.seekToRelative(21);
+        }
         if (SettingsEnum.ENABLE_TIME_STAMP_SPEED.getBoolean()) {
             var regex = "\\((.*?)\\)";
             Matcher matcher = Pattern.compile(regex).matcher(totalTime);

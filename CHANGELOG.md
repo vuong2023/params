@@ -1,3 +1,10 @@
+## [0.125.1](https://github.com/YT-Advanced/params/compare/v0.125.0...v0.125.1) (2023-09-04)
+
+
+### Bug Fixes
+
+* Use seek to fix playback issues (Intelligent move) ([07c9053](https://github.com/YT-Advanced/params/commit/07c905322378d135bd06391c6eea5e491db49f5d))
+
 # [0.125.0](https://github.com/YT-Advanced/params/compare/v0.124.0...v0.125.0) (2023-09-04)
 
 

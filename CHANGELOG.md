@@ -1,3 +1,10 @@
+## [0.125.6](https://github.com/YT-Advanced/params/compare/v0.125.5...v0.125.6) (2023-09-04)
+
+
+### Bug Fixes
+
+* Seek not worked ([71323f8](https://github.com/YT-Advanced/params/commit/71323f8aaff4d84886f70697d38a61da4eefcd8a))
+
 ## [0.125.5](https://github.com/YT-Advanced/params/compare/v0.125.4...v0.125.5) (2023-09-04)
 
 

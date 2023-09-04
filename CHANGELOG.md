@@ -1,3 +1,10 @@
+# [0.123.0](https://github.com/YT-Advanced/params/compare/v0.122.0...v0.123.0) (2023-09-04)
+
+
+### Features
+
+* Podcast params ([b64297e](https://github.com/YT-Advanced/params/commit/b64297e8ece790b029b738f40e1e1f9f6cb4b1fa))
+
 # [0.122.0](https://github.com/YT-Advanced/params/compare/v0.121.0...v0.122.0) (2023-09-04)
 
 

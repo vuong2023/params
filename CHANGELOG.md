@@ -1,3 +1,10 @@
+## [0.125.5](https://github.com/YT-Advanced/params/compare/v0.125.4...v0.125.5) (2023-09-04)
+
+
+### Bug Fixes
+
+* Seperate check ([34d9937](https://github.com/YT-Advanced/params/commit/34d99376276fe24947bcd99a0352b3e7d398595f))
+
 ## [0.125.4](https://github.com/YT-Advanced/params/compare/v0.125.3...v0.125.4) (2023-09-04)
 
 

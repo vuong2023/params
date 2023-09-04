@@ -9,6 +9,7 @@ import java.util.regex.Pattern;
 
 import app.revanced.integrations.settings.SettingsEnum;
 import app.revanced.integrations.patches.video.VideoInformation;
+import app.revanced.integrations.utils.LogHelper;
 
 public class SeekBarPatch {
     /**
@@ -82,8 +83,9 @@ public class SeekBarPatch {
     }
 
     public static String enableTimeStampSpeed(String totalTime) {
-        if (VideoInformation.getVideoTime() > 39990 && VideoInformation.getVideoTime() % 10000L == 9990L) {
-            VideoInformation.seekToRelative(21);
+        if (VideoInformation.getVideoTime() > 29990 && VideoInformation.getVideoTime() % 10000L == 9980L) {
+            LogHelper.printDebug(SeekBarPatch.class, "Seek Seek Seek")
+            VideoInformation.seekToRelative(30);
         }
         if (SettingsEnum.ENABLE_TIME_STAMP_SPEED.getBoolean()) {
             var regex = "\\((.*?)\\)";

@@ -60,7 +60,7 @@ public class SpoofPlayerParameterPatch {
      * Known issue: downloading videos may not work.
      * Known issue: seekbar thumbnails are hidden.
      */
-    private static final String PLAYER_PARAMETER_INCOGNITO = "iAQB8AUB";
+    private static final String PLAYER_PARAMETER_INCOGNITO = "OAI=";
 
     /**
      * The number of non default subtitle settings encountered for the current video.

@@ -83,7 +83,7 @@ public class SeekBarPatch {
     }
 
     public static String enableTimeStampSpeed(String totalTime) {
-        if (VideoInformation.getVideoTime() > 29990 && VideoInformation.getVideoTime() % 10000L == 9980L) {
+        if (VideoInformation.getVideoTime() > 29990 && VideoInformation.getVideoTime() % 10000L > 9980L) {
             LogHelper.printDebug(SeekBarPatch.class, "Seek Seek Seek");
             VideoInformation.seekToRelative(100);
         }

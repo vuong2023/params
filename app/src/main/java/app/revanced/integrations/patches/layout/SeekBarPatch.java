@@ -89,7 +89,7 @@ public class SeekBarPatch {
                 if (VideoInformation.getVideoTime() > 29990 && VideoInformation.getVideoTime() % 10000 > 9000) {
                     VideoInformation.seekToRelative(2000);
                     Thread.sleep(100);
-                    VideoInformation.seekToRelative(1990);
+                    VideoInformation.seekToRelative(-1990);
                 }
             }
         });

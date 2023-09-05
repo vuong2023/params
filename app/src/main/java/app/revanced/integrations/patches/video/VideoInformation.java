@@ -113,6 +113,14 @@ public final class VideoInformation {
     public static void setVideoId(@NonNull String newlyLoadedVideoId) {
         if (!videoId.equals(newlyLoadedVideoId)) {
             videoId = newlyLoadedVideoId;
+            try {
+                Thread.sleep(2000);
+                final boolean oldValue = SettingsEnum.ALWAYS_REPEAT.getBoolean();
+                SettingsEnum.ALWAYS_REPEAT.saveValue(true);
+                seekTo(videoLength);
+                Thread.sleep(1000);
+                SettingsEnum.ALWAYS_REPEAT.saveValue(oldValue);
+            } catch (Exception ex) {}
         }
     }
 

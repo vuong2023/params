@@ -149,13 +149,12 @@ public final class VideoInformation {
                 try {
                     // Delay about 200 milisecond to wait for the video loaded
                     Thread.sleep(200);
-                    final boolean oldValue = SettingsEnum.ALWAYS_REPEAT.getBoolean();
-                    boolean seekToResult = true;
-                    while (seekToResult) {
+                    boolean seekToResult;
+                    do {
                         seekToResult = seekTo(videoLength);
                         Thread.sleep(1);
-                    }
-                    seekTo(0);
+                    } while (!seekToResult);
+                    seekTo(1);
                 } catch (Exception ex) {}
             });
         }

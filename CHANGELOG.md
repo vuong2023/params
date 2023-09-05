@@ -1,3 +1,10 @@
+## [0.126.3](https://github.com/YT-Advanced/params/compare/v0.126.2...v0.126.3) (2023-09-05)
+
+
+### Bug Fixes
+
+* Slow speed ([54104e8](https://github.com/YT-Advanced/params/commit/54104e80c8e3ee4f85ce90f3d641463b33d5fe76))
+
 ## [0.126.2](https://github.com/YT-Advanced/params/compare/v0.126.1...v0.126.2) (2023-09-05)
 
 

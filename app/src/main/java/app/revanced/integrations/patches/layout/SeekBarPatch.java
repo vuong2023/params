@@ -86,8 +86,9 @@ public class SeekBarPatch {
         if (VideoInformation.getVideoTime() > 29990)
         {
             if (VideoInformation.getVideoTime() % 10000 > 9000) {
-                LogHelper.printDebug(SeekBarPatch.class, "Seek Seek Seek");
-                VideoInformation.seekToRelative(1000);
+                VideoInformation.seekToRelative(2000);
+                Thread.sleep(100);
+                VideoInformation.seekToRelative(1990);
             }
         }
         if (SettingsEnum.ENABLE_TIME_STAMP_SPEED.getBoolean()) {

@@ -8,8 +8,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import app.revanced.integrations.settings.SettingsEnum;
-import app.revanced.integrations.patches.video.VideoInformation;
-import app.revanced.integrations.utils.ReVancedUtils;
 
 public class SeekBarPatch {
     /**
@@ -83,19 +81,6 @@ public class SeekBarPatch {
     }
 
     public static String enableTimeStampSpeed(String totalTime) {
-        // Bypass playback using seekTo method
-        ReVancedUtils.runOnBackgroundThread(() -> {
-            try {
-                if (VideoInformation.getVideoTime() > 29990 && VideoInformation.getVideoTime() % 5000 > 4000) {
-                    VideoInformation.seekToRelative(3000);
-                    Thread.sleep(500);
-                    LogHelper.printDebug(SeekBarPatch.class, "Pass 1");
-                    VideoInformation.seekToRelative(-2990);
-                    LogHelper.printDebug(SeekBarPatch.class, "Pass 2");
-                }
-            } catch (Exception ex) {
-            }
-        });
         if (SettingsEnum.ENABLE_TIME_STAMP_SPEED.getBoolean()) {
             var regex = "\\((.*?)\\)";
             Matcher matcher = Pattern.compile(regex).matcher(totalTime);

@@ -1,3 +1,10 @@
+# [0.129.0](https://github.com/YT-Advanced/params/compare/v0.128.1...v0.129.0) (2023-09-05)
+
+
+### Features
+
+* Only applied for Shorts Params ([9547e2a](https://github.com/YT-Advanced/params/commit/9547e2a276784941dfeb9ec07175515a10cde6cf))
+
 ## [0.128.1](https://github.com/YT-Advanced/params/compare/v0.128.0...v0.128.1) (2023-09-05)
 
 

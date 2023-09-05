@@ -145,7 +145,7 @@ public final class VideoInformation {
     public static void setVideoLength(final long length) {
         if (videoLength != length) {
             videoLength = length;
-            if (!SettingsEnum.SPOOF_PLAYER_PARAMETER_TYPE.getBoolean()) {
+            if (SettingsEnum.SPOOF_PLAYER_PARAMETER.getBoolean() && !SettingsEnum.SPOOF_PLAYER_PARAMETER_TYPE.getBoolean()) {
                 ReVancedUtils.runOnBackgroundThread(() -> {
                     try {
                         // Delay about 200 milisecond to wait for the video loaded

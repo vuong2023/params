@@ -145,13 +145,19 @@ public final class VideoInformation {
     public static void setVideoLength(final long length) {
         if (videoLength != length) {
             videoLength = length;
-            try {
-                final boolean oldValue = SettingsEnum.ALWAYS_REPEAT.getBoolean();
-                SettingsEnum.ALWAYS_REPEAT.saveValue(true);
-                seekTo(videoLength);
-                Thread.sleep(10);
-                SettingsEnum.ALWAYS_REPEAT.saveValue(oldValue);
-            } catch (Exception ex) {}
+            ReVancedUtils.runOnBackgroundThread(() -> {
+                try {
+                    // Delay about 200 milisecond to wait for the video loaded
+                    Thread.sleep(200);
+                    final boolean oldValue = SettingsEnum.ALWAYS_REPEAT.getBoolean();
+                    boolean seekToResult = true;
+                    while (seekToResult) {
+                        seekToResult = seekTo(videoLength);
+                        Thread.sleep(1);
+                    }
+                    seekTo(0);
+                } catch (Exception ex) {}
+            });
         }
     }
 

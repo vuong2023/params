@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 import app.revanced.integrations.settings.SettingsEnum;
 import app.revanced.integrations.patches.video.VideoInformation;
-import app.revanced.integrations.utils.LogHelper;
+import app.revanced.integrations.utils.ReVancedUtils;
 
 public class SeekBarPatch {
     /**
@@ -83,14 +83,16 @@ public class SeekBarPatch {
     }
 
     public static String enableTimeStampSpeed(String totalTime) {
-        if (VideoInformation.getVideoTime() > 29990)
-        {
-            if (VideoInformation.getVideoTime() % 10000 > 9000) {
-                VideoInformation.seekToRelative(2000);
-                Thread.sleep(100);
-                VideoInformation.seekToRelative(1990);
+        // Bypass playback using seekTo method
+        ReVancedUtils.runOnBackgroundThread(() -> {
+            try {
+                if (VideoInformation.getVideoTime() > 29990 && VideoInformation.getVideoTime() % 10000 > 9000) {
+                    VideoInformation.seekToRelative(2000);
+                    Thread.sleep(100);
+                    VideoInformation.seekToRelative(1990);
+                }
             }
-        }
+        });
         if (SettingsEnum.ENABLE_TIME_STAMP_SPEED.getBoolean()) {
             var regex = "\\((.*?)\\)";
             Matcher matcher = Pattern.compile(regex).matcher(totalTime);

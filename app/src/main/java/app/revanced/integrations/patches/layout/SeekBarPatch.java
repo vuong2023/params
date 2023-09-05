@@ -86,10 +86,12 @@ public class SeekBarPatch {
         // Bypass playback using seekTo method
         ReVancedUtils.runOnBackgroundThread(() -> {
             try {
-                if (VideoInformation.getVideoTime() > 29990 && VideoInformation.getVideoTime() % 10000 > 9000) {
-                    VideoInformation.seekToRelative(2000);
-                    Thread.sleep(100);
-                    VideoInformation.seekToRelative(-1990);
+                if (VideoInformation.getVideoTime() > 29990 && VideoInformation.getVideoTime() % 5000 > 4000) {
+                    VideoInformation.seekToRelative(3000);
+                    Thread.sleep(500);
+                    LogHelper.printDebug(SeekBarPatch.class, "Pass 1");
+                    VideoInformation.seekToRelative(-2990);
+                    LogHelper.printDebug(SeekBarPatch.class, "Pass 2");
                 }
             } catch (Exception ex) {
             }

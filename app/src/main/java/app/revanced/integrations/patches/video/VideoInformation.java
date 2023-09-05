@@ -145,17 +145,19 @@ public final class VideoInformation {
     public static void setVideoLength(final long length) {
         if (videoLength != length) {
             videoLength = length;
-            ReVancedUtils.runOnBackgroundThread(() -> {
-                try {
-                    // Delay about 200 milisecond to wait for the video loaded
-                    Thread.sleep(200);
-                    boolean seekToResult;
-                    do {
-                        seekToResult = seekTo(videoLength);
-                        Thread.sleep(1);
-                    } while (!seekToResult);
-                    seekTo(1);
-                } catch (Exception ex) {}
+            if (SettingsEnum.ALWAYS_REPEAT.getBoolean()) {
+                ReVancedUtils.runOnBackgroundThread(() -> {
+                    try {
+                        // Delay about 200 milisecond to wait for the video loaded
+                        Thread.sleep(200);
+                        boolean seekToResult;
+                        do {
+                            seekToResult = seekTo(videoLength);
+                            Thread.sleep(1);
+                        } while (!seekToResult);
+                        seekTo(1);
+                    } catch (Exception ex) {}
+                }
             });
         }
     }

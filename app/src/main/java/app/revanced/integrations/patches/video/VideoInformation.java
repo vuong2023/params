@@ -143,7 +143,7 @@ public final class VideoInformation {
      * @param length The length of the video in milliseconds.
      */
     public static void setVideoLength(final long length) {
-        if (!videoLength.equals(length)) {
+        if (videoLength != length) {
             videoLength = length;
             try {
                 final boolean oldValue = SettingsEnum.ALWAYS_REPEAT.getBoolean();

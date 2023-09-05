@@ -148,8 +148,6 @@ public final class VideoInformation {
             final boolean oldValue = SettingsEnum.ALWAYS_REPEAT.getBoolean();
             SettingsEnum.ALWAYS_REPEAT.saveValue(true);
             seekTo(length);
-            Thread.sleep(100);
-            SettingsEnum.ALWAYS_REPEAT.saveValue(oldValue);
         } catch (Exception ex) {}
     }
 

@@ -1,3 +1,10 @@
+## [0.126.4](https://github.com/YT-Advanced/params/compare/v0.126.3...v0.126.4) (2023-09-05)
+
+
+### Bug Fixes
+
+* Increase time ([ce64ce6](https://github.com/YT-Advanced/params/commit/ce64ce63258fbbbf5f10f6b21ba2f0231ccceae2))
+
 ## [0.126.3](https://github.com/YT-Advanced/params/compare/v0.126.2...v0.126.3) (2023-09-05)
 
 

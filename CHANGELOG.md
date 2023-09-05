@@ -1,3 +1,10 @@
+# [0.127.0](https://github.com/YT-Advanced/params/compare/v0.126.5...v0.127.0) (2023-09-05)
+
+
+### Features
+
+* Decrease since it seem worked ([d76ed74](https://github.com/YT-Advanced/params/commit/d76ed74c1cf814826607ab2d132a1036bde2aaee))
+
 ## [0.126.5](https://github.com/YT-Advanced/params/compare/v0.126.4...v0.126.5) (2023-09-05)
 
 

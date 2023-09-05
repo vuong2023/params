@@ -113,14 +113,6 @@ public final class VideoInformation {
     public static void setVideoId(@NonNull String newlyLoadedVideoId) {
         if (!videoId.equals(newlyLoadedVideoId)) {
             videoId = newlyLoadedVideoId;
-            try {
-                Thread.sleep(2000);
-                final boolean oldValue = SettingsEnum.ALWAYS_REPEAT.getBoolean();
-                SettingsEnum.ALWAYS_REPEAT.saveValue(true);
-                seekTo(videoLength);
-                Thread.sleep(1000);
-                SettingsEnum.ALWAYS_REPEAT.saveValue(oldValue);
-            } catch (Exception ex) {}
         }
     }
 
@@ -151,7 +143,16 @@ public final class VideoInformation {
      * @param length The length of the video in milliseconds.
      */
     public static void setVideoLength(final long length) {
-        videoLength = length;
+        if (!videoLength.equals(length)) {
+            videoLength = length;
+            try {
+                final boolean oldValue = SettingsEnum.ALWAYS_REPEAT.getBoolean();
+                SettingsEnum.ALWAYS_REPEAT.saveValue(true);
+                seekTo(videoLength);
+                Thread.sleep(1000);
+                SettingsEnum.ALWAYS_REPEAT.saveValue(oldValue);
+            } catch (Exception ex) {}
+        }
     }
 
     /**

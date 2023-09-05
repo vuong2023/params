@@ -91,6 +91,7 @@ public class SeekBarPatch {
                     Thread.sleep(100);
                     VideoInformation.seekToRelative(-1990);
                 }
+            } catch (Exception ex) {
             }
         });
         if (SettingsEnum.ENABLE_TIME_STAMP_SPEED.getBoolean()) {

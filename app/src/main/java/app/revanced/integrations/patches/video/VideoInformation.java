@@ -157,8 +157,8 @@ public final class VideoInformation {
                         } while (!seekToResult);
                         seekTo(1);
                     } catch (Exception ex) {}
-                }
-            });
+                });
+            }
         }
     }
 

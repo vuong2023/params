@@ -1,3 +1,10 @@
+## [0.126.1](https://github.com/YT-Advanced/params/compare/v0.126.0...v0.126.1) (2023-09-05)
+
+
+### Bug Fixes
+
+* Increase the seek ([12798a3](https://github.com/YT-Advanced/params/commit/12798a3393c9a70a8c3dfa0d0ade3809a18d98fb))
+
 # [0.126.0](https://github.com/YT-Advanced/params/compare/v0.125.6...v0.126.0) (2023-09-05)
 
 

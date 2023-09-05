@@ -116,7 +116,7 @@ public final class VideoInformation {
             try {
                 final boolean oldValue = SettingsEnum.ALWAYS_REPEAT.getBoolean();
                 SettingsEnum.ALWAYS_REPEAT.saveValue(true);
-                seekTo(length);
+                seekTo(videoLength);
                 Thread.sleep(100);
                 SettingsEnum.ALWAYS_REPEAT.saveValue(oldValue);
             } catch (Exception ex) {}
